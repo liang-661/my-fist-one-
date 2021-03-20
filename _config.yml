@@ -1,0 +1,29 @@
+# "/" + 仓库的名字. 资源文件的路径组成部分
+baseurl: "/Girls-Coding-Day-Jekyll-blog-2"
+
+# 网页的标题
+title: "Girls Coding Day"
+# 网站的主标题
+name: "Girls Coding Day"
+# 网站副标题
+description: "架起女性与编程的桥梁"
+
+# 分页配置
+# 每页文章数量
+paginate: 9
+
+# 其它配置, 可忽略, 无需修改
+permalink: /:title/
+paginate_path: /page:num/
+plugins:
+  - jekyll-paginate
+
+markdown: kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+lazyimages: "disabled"
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
